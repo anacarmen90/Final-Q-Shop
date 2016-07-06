@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../common.css">
     <script src="../assets/js/jquery-2.1.4.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.js"></script>
+    <script src="../assets/js/register.js"></script>
 </head>
 <body id="top">
 <!-- Header -->
@@ -42,22 +43,26 @@
         <form method="post" class="q-form">
             <div class="form-group">
                 <label for="username">Username </label>
-                <input class="form-control" type="text" id="username" name="username" required placeholder="John Smith">
+                <input class="form-control" type="text" id="username" name="username"  placeholder="John Smith">
+                <p class="hidden error-message" id="error-username"> Fill in your username </p>
             </div>
             <div class="form-group">
                 <label for="email">Email </label>
-                <input class="form-control" type="email" id="email" name="email" required placeholder="johnsmith@example.com">
+                <input class="form-control" type="email" id="email" name="email"  placeholder="johnsmith@example.com">
+                <p class="hidden error-message" > Fill in your email </p>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
                 <input class="form-control" type="password" id="password" name="password" placeholder="******">
+                <p class="hidden error-message" > Fill in your password </p>
             </div>
             <div class="form-group">
                 <label for="confirm-password">Password</label>
                 <input class="form-control" type="password" id="confirm-password" name="confirm-password" placeholder="******">
+                <p class="hidden error-message"> Confirm password </p>
             </div>
             <div class="form-group pull-left">
-                <button class="btn btn-default" type="submit" name="submit">Create Account</button>
+                <button class="btn btn-default" type="submit" name="submit" id="submit-button">Create Account</button>
             </div>
 
         </form>
